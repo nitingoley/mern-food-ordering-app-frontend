@@ -1,6 +1,6 @@
 import landingImage from "../assets/landing.png";
 import appDownloadImage from "../assets/appDownload.png";
-
+// import React from "react";
 
 const HomePage = () => {
   return (

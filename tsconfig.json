@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "types": ["react", "react-dom", "node"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
@@ -18,7 +16,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-
+    "jsx": "react-jsx",
 
     /* Linting */
     "strict": true,

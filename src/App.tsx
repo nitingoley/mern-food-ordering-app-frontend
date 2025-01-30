@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import AuthCallbackPage from "./pages/AuthCallbackPage";
 import { UserProfilePage } from "./pages/UserProfilePage";
 import ProtectedRoute from "./auth/ProtectedRoute";
+import ManageRestaurantPage from "./forms/manage-restaurant-form/ManageRestaurantPage";
 
 export const App = () => {
   return (
@@ -21,15 +22,24 @@ export const App = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Singup />} />
       <Route path="/auth-callback" element={<AuthCallbackPage />} />
-      <Route element={<ProtectedRoute />}> 
-      <Route
-        path="/user-profile"
-        element={
-          <Layout>
-            <UserProfilePage />
-          </Layout>
-        }
-      />
+      <Route element={<ProtectedRoute />}>
+        <Route
+          path="/user-profile"
+          element={
+            <Layout>
+              <UserProfilePage />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/manage-restaurant"
+          element={
+            <Layout>
+              <ManageRestaurantPage />
+            </Layout>
+          }
+        />
       </Route>
     </Routes>
   );
